@@ -345,8 +345,9 @@ _tmp.foo.bar // 报错
 // 错误的写法
 let x;
 {x} = {x: 1};
-// SyntaxError: syntax error
+// 并不会报错
 ```
+
 
 上面代码的写法会报错，因为JavaScript引擎会将`{x}`理解成一个代码块，从而发生语法错误。只有不将大括号写在行首，避免JavaScript将其解释为代码块，才能解决这个问题。
 
